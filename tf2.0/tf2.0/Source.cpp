@@ -38,10 +38,10 @@ Table* f1(vector<Table*>*tables,int &contables) {
 
 	tables->push_back(new Table(n));
 
+	contables = tables->size() - 1;
+
 	Table *t = tables->at(contables);
 
-	contables = tables->size()-1;
-	
 	t->generate();
 
 	return t;
